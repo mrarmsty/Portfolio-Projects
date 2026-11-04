@@ -1,0 +1,1062 @@
+{
+  "seed": 42,
+  "cleaning_log": {
+    "raw_records": 32581,
+    "duplicates_removed": 165,
+    "invalid_age_removed": 5,
+    "emp_length_invalid_set_missing": 2,
+    "rate_placeholder_set_missing": 11,
+    "emp_length_missing_after_cleaning": 889,
+    "int_rate_missing_after_cleaning": 3105,
+    "lti_mismatch_flagged": 428,
+    "lti_mismatch_default_share": 1.0,
+    "clean_records": 32411
+  },
+  "split": {
+    "train_n": 22687,
+    "test_n": 9724,
+    "train_default_rate": 0.21871556397937145,
+    "test_default_rate": 0.21873714520773344
+  },
+  "imputation": {
+    "emp_length_train_median": 4.0,
+    "int_rate_train_median_by_grade": {
+      "A": 7.49,
+      "B": 10.99,
+      "C": 13.49,
+      "D": 15.31,
+      "E": 16.77,
+      "F": 18.43,
+      "G": 20.11
+    }
+  },
+  "logistic_regression": {
+    "reference_levels": {
+      "loan_grade": "A",
+      "person_home_ownership": "MORTGAGE",
+      "loan_intent": "EDUCATION"
+    },
+    "terms": [
+      {
+        "term": "const",
+        "coef": 9.40176570191054,
+        "se": 0.5193731445194528,
+        "z": 18.102140630720275,
+        "p": 3.0652029468121064e-73
+      },
+      {
+        "term": "loan_grade=B",
+        "coef": 0.39279455809805386,
+        "se": 0.059052164310966396,
+        "z": 6.65165388400691,
+        "p": 2.8981761474843595e-11
+      },
+      {
+        "term": "loan_grade=C",
+        "coef": 0.7973826810348695,
+        "se": 0.06310545871716018,
+        "z": 12.635716422072981,
+        "p": 1.3416654518938576e-36
+      },
+      {
+        "term": "loan_grade=D",
+        "coef": 2.9986000230058916,
+        "se": 0.06888146210496121,
+        "z": 43.53275803635876,
+        "p": 0.0
+      },
+      {
+        "term": "loan_grade=E",
+        "coef": 3.314873603877592,
+        "se": 0.10861176558146662,
+        "z": 30.52039147076749,
+        "p": 1.3978762811720196e-204
+      },
+      {
+        "term": "loan_grade=F",
+        "coef": 3.8462473063675944,
+        "se": 0.21222788582786334,
+        "z": 18.123194750605304,
+        "p": 2.0909365748250684e-73
+      },
+      {
+        "term": "loan_grade=G",
+        "coef": 7.241851379561479,
+        "se": 1.0627240108694163,
+        "z": 6.814423411433895,
+        "p": 9.46425781711043e-12
+      },
+      {
+        "term": "person_home_ownership=OTHER",
+        "coef": 0.6638549829500068,
+        "se": 0.35416136479582966,
+        "z": 1.874442129882553,
+        "p": 0.06086951129533724
+      },
+      {
+        "term": "person_home_ownership=OWN",
+        "coef": -1.9086120978549714,
+        "se": 0.12691400259215535,
+        "z": -15.038625044301803,
+        "p": 4.099770858657287e-51
+      },
+      {
+        "term": "person_home_ownership=RENT",
+        "coef": 0.8128488734019806,
+        "se": 0.04857180407511723,
+        "z": 16.734994486613967,
+        "p": 7.286387860663974e-63
+      },
+      {
+        "term": "loan_intent=DEBTCONSOLIDATION",
+        "coef": 0.8161104235087305,
+        "se": 0.06921407641598563,
+        "z": 11.791104725631248,
+        "p": 4.33812909904187e-32
+      },
+      {
+        "term": "loan_intent=HOMEIMPROVEMENT",
+        "coef": 0.9439372381789849,
+        "se": 0.07904966703329736,
+        "z": 11.94106532771832,
+        "p": 7.22912896738157e-33
+      },
+      {
+        "term": "loan_intent=MEDICAL",
+        "coef": 0.6205868099443596,
+        "se": 0.06738621870486387,
+        "z": 9.209402484243654,
+        "p": 3.279453255086678e-20
+      },
+      {
+        "term": "loan_intent=PERSONAL",
+        "coef": 0.14242931841957754,
+        "se": 0.07258315918144409,
+        "z": 1.962291529134621,
+        "p": 0.049728552861356995
+      },
+      {
+        "term": "loan_intent=VENTURE",
+        "coef": -0.2851595492450873,
+        "se": 0.07626488170528224,
+        "z": -3.7390676136764616,
+        "p": 0.0001847040478450991
+      },
+      {
+        "term": "lti",
+        "coef": -2.1519136433763317,
+        "se": 0.7501057642468841,
+        "z": -2.8688136339505146,
+        "p": 0.00412014487084333
+      },
+      {
+        "term": "lti_squared",
+        "coef": 22.212959168169057,
+        "se": 1.6026036048822212,
+        "z": 13.860544866178268,
+        "p": 1.098373206518688e-43
+      },
+      {
+        "term": "ln_income",
+        "coef": -1.2126001730131695,
+        "se": 0.04598902334651908,
+        "z": -26.367165135829122,
+        "p": 3.262443622047488e-153
+      },
+      {
+        "term": "emp_unknown",
+        "coef": 0.6472834042408334,
+        "se": 0.11996573692441412,
+        "z": 5.39556894189432,
+        "p": 6.83067578450142e-08
+      }
+    ],
+    "llf": -7469.735892476601,
+    "llnull": -11916.970193501988,
+    "aic": 14977.471784953203,
+    "mcfadden_r2": 0.3731849814855077,
+    "n_train": 22687,
+    "dropped_candidates": [
+      "emp_length_imputed",
+      "prior_default",
+      "person_age",
+      "cred_hist_length",
+      "int_rate_imputed"
+    ],
+    "dropped_lr_test": {
+      "chi2": 10.506729769153026,
+      "df": 5,
+      "p": 0.062086338322003325
+    },
+    "full_model_terms": {
+      "const": {
+        "coef": 8.939451179031895,
+        "p": 1.211321906519392e-57
+      },
+      "loan_grade=B": {
+        "coef": 0.19527753656868135,
+        "p": 0.04750474292981087
+      },
+      "loan_grade=C": {
+        "coef": 0.47379762139046017,
+        "p": 0.0017308164045514338
+      },
+      "loan_grade=D": {
+        "coef": 2.5764115786808004,
+        "p": 1.3109708906627397e-41
+      },
+      "loan_grade=E": {
+        "coef": 2.7998210426920482,
+        "p": 8.150479216361892e-32
+      },
+      "loan_grade=F": {
+        "coef": 3.2468940503415147,
+        "p": 1.0017896058530827e-23
+      },
+      "loan_grade=G": {
+        "coef": 6.529525926773026,
+        "p": 3.0191622596230657e-09
+      },
+      "person_home_ownership=OTHER": {
+        "coef": 0.628690726422846,
+        "p": 0.07515328285254397
+      },
+      "person_home_ownership=OWN": {
+        "coef": -1.9216269016475782,
+        "p": 1.5376481687961764e-51
+      },
+      "person_home_ownership=RENT": {
+        "coef": 0.7963037811337985,
+        "p": 5.504274404375578e-59
+      },
+      "loan_intent=DEBTCONSOLIDATION": {
+        "coef": 0.8197900087120661,
+        "p": 3.029427481800886e-32
+      },
+      "loan_intent=HOMEIMPROVEMENT": {
+        "coef": 0.9521432976820277,
+        "p": 4.4785390446490334e-33
+      },
+      "loan_intent=MEDICAL": {
+        "coef": 0.6253025900013065,
+        "p": 2.3083493786197902e-20
+      },
+      "loan_intent=PERSONAL": {
+        "coef": 0.14393162163581885,
+        "p": 0.04776238279759475
+      },
+      "loan_intent=VENTURE": {
+        "coef": -0.28309347287937986,
+        "p": 0.00020815147436953045
+      },
+      "lti": {
+        "coef": -2.164079574604412,
+        "p": 0.003934854060660368
+      },
+      "lti_squared": {
+        "coef": 22.26492175508918,
+        "p": 7.875285122859616e-44
+      },
+      "ln_income": {
+        "coef": -1.1978351881701375,
+        "p": 2.03898027980234e-145
+      },
+      "emp_unknown": {
+        "coef": 0.6559271203563721,
+        "p": 4.626063399125384e-08
+      },
+      "emp_length_imputed": {
+        "coef": -0.011044136103988264,
+        "p": 0.06395361717835213
+      },
+      "prior_default": {
+        "coef": -0.021390869127254738,
+        "p": 0.7241020832949352
+      },
+      "person_age": {
+        "coef": -0.0013311806664224632,
+        "p": 0.8513515912382736
+      },
+      "cred_hist_length": {
+        "coef": -0.0018632388594020395,
+        "p": 0.8635815167991926
+      },
+      "int_rate_imputed": {
+        "coef": 0.0547707332474103,
+        "p": 0.013394312242783651
+      }
+    },
+    "test_auc": 0.8800261021551141,
+    "train_auc": 0.8813318086285103,
+    "test_auc_linear_lti_only": 0.8757373605088343
+  },
+  "decision_tree": {
+    "features": [
+      "lti",
+      "grade_num",
+      "person_income",
+      "emp_length_model",
+      "int_rate_model",
+      "person_age",
+      "cb_person_cred_hist_length",
+      "loan_amnt",
+      "prior_default",
+      "emp_unknown",
+      "home_MORTGAGE",
+      "home_OTHER",
+      "home_OWN",
+      "home_RENT",
+      "intent_EDUCATION",
+      "intent_DEBTCONSOLIDATION",
+      "intent_HOMEIMPROVEMENT",
+      "intent_MEDICAL",
+      "intent_PERSONAL",
+      "intent_VENTURE"
+    ],
+    "best_params": {
+      "max_depth": 6,
+      "min_samples_leaf": 50
+    },
+    "cv_auc": 0.9022802212970203,
+    "cv_results": [
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 50,
+        "cv_auc": 0.8529128768296499
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 100,
+        "cv_auc": 0.8527877818245623
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 200,
+        "cv_auc": 0.8522180565954492
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 400,
+        "cv_auc": 0.8520107605689894
+      },
+      {
+        "max_depth": 4,
+        "min_samples_leaf": 50,
+        "cv_auc": 0.8770868072503705
+      },
+      {
+        "max_depth": 4,
+        "min_samples_leaf": 100,
+        "cv_auc": 0.8763485869934804
+      },
+      {
+        "max_depth": 4,
+        "min_samples_leaf": 200,
+        "cv_auc": 0.8747120863321104
+      },
+      {
+        "max_depth": 4,
+        "min_samples_leaf": 400,
+        "cv_auc": 0.8695781084257987
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 50,
+        "cv_auc": 0.8947015365177149
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 100,
+        "cv_auc": 0.8938558075061305
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 200,
+        "cv_auc": 0.8912849121073503
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 400,
+        "cv_auc": 0.8824196851343086
+      },
+      {
+        "max_depth": 6,
+        "min_samples_leaf": 50,
+        "cv_auc": 0.9022802212970203
+      },
+      {
+        "max_depth": 6,
+        "min_samples_leaf": 100,
+        "cv_auc": 0.9009657147727343
+      },
+      {
+        "max_depth": 6,
+        "min_samples_leaf": 200,
+        "cv_auc": 0.8987431806587602
+      },
+      {
+        "max_depth": 6,
+        "min_samples_leaf": 400,
+        "cv_auc": 0.8891557292546528
+      }
+    ],
+    "nodes": [
+      {
+        "node": 0,
+        "leaf": false,
+        "feature": "lti",
+        "threshold": 0.3044174909591675,
+        "left": 1,
+        "right": 46,
+        "n": 22687,
+        "defaults": 4962
+      },
+      {
+        "node": 1,
+        "leaf": false,
+        "feature": "grade_num",
+        "threshold": 3.5,
+        "left": 2,
+        "right": 25,
+        "n": 19979,
+        "defaults": 3041
+      },
+      {
+        "node": 2,
+        "leaf": false,
+        "feature": "person_income",
+        "threshold": 19996.0,
+        "left": 3,
+        "right": 10,
+        "n": 17150,
+        "defaults": 1453
+      },
+      {
+        "node": 3,
+        "leaf": false,
+        "feature": "lti",
+        "threshold": 0.15481211990118027,
+        "left": 4,
+        "right": 9,
+        "n": 410,
+        "defaults": 282
+      },
+      {
+        "node": 4,
+        "leaf": false,
+        "feature": "person_age",
+        "threshold": 27.5,
+        "left": 5,
+        "right": 8,
+        "n": 155,
+        "defaults": 27
+      },
+      {
+        "node": 5,
+        "leaf": false,
+        "feature": "int_rate_model",
+        "threshold": 10.829999923706055,
+        "left": 6,
+        "right": 7,
+        "n": 101,
+        "defaults": 10
+      },
+      {
+        "node": 6,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 51,
+        "defaults": 3
+      },
+      {
+        "node": 7,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 50,
+        "defaults": 7
+      },
+      {
+        "node": 8,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 54,
+        "defaults": 17
+      },
+      {
+        "node": 9,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 255,
+        "defaults": 255
+      },
+      {
+        "node": 10,
+        "leaf": false,
+        "feature": "person_income",
+        "threshold": 34048.0,
+        "left": 11,
+        "right": 18,
+        "n": 16740,
+        "defaults": 1171
+      },
+      {
+        "node": 11,
+        "leaf": false,
+        "feature": "intent_HOMEIMPROVEMENT",
+        "threshold": 0.5,
+        "left": 12,
+        "right": 15,
+        "n": 2205,
+        "defaults": 334
+      },
+      {
+        "node": 12,
+        "leaf": false,
+        "feature": "person_income",
+        "threshold": 33918.0,
+        "left": 13,
+        "right": 14,
+        "n": 2059,
+        "defaults": 257
+      },
+      {
+        "node": 13,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 1949,
+        "defaults": 214
+      },
+      {
+        "node": 14,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 110,
+        "defaults": 43
+      },
+      {
+        "node": 15,
+        "leaf": false,
+        "feature": "home_RENT",
+        "threshold": 0.5,
+        "left": 16,
+        "right": 17,
+        "n": 146,
+        "defaults": 77
+      },
+      {
+        "node": 16,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 90,
+        "defaults": 21
+      },
+      {
+        "node": 17,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 56,
+        "defaults": 56
+      },
+      {
+        "node": 18,
+        "leaf": false,
+        "feature": "int_rate_model",
+        "threshold": 11.180000305175781,
+        "left": 19,
+        "right": 22,
+        "n": 14535,
+        "defaults": 837
+      },
+      {
+        "node": 19,
+        "leaf": false,
+        "feature": "intent_VENTURE",
+        "threshold": 0.5,
+        "left": 20,
+        "right": 21,
+        "n": 9455,
+        "defaults": 375
+      },
+      {
+        "node": 20,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 7752,
+        "defaults": 375
+      },
+      {
+        "node": 21,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 1703,
+        "defaults": 0
+      },
+      {
+        "node": 22,
+        "leaf": false,
+        "feature": "person_income",
+        "threshold": 79993.5,
+        "left": 23,
+        "right": 24,
+        "n": 5080,
+        "defaults": 462
+      },
+      {
+        "node": 23,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 3440,
+        "defaults": 380
+      },
+      {
+        "node": 24,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 1640,
+        "defaults": 82
+      },
+      {
+        "node": 25,
+        "leaf": false,
+        "feature": "emp_length_model",
+        "threshold": 2.5,
+        "left": 26,
+        "right": 33,
+        "n": 2829,
+        "defaults": 1588
+      },
+      {
+        "node": 26,
+        "leaf": false,
+        "feature": "home_RENT",
+        "threshold": 0.5,
+        "left": 27,
+        "right": 32,
+        "n": 1021,
+        "defaults": 800
+      },
+      {
+        "node": 27,
+        "leaf": false,
+        "feature": "intent_MEDICAL",
+        "threshold": 0.5,
+        "left": 28,
+        "right": 31,
+        "n": 350,
+        "defaults": 129
+      },
+      {
+        "node": 28,
+        "leaf": false,
+        "feature": "intent_EDUCATION",
+        "threshold": 0.5,
+        "left": 29,
+        "right": 30,
+        "n": 296,
+        "defaults": 81
+      },
+      {
+        "node": 29,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 219,
+        "defaults": 71
+      },
+      {
+        "node": 30,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 77,
+        "defaults": 10
+      },
+      {
+        "node": 31,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 54,
+        "defaults": 48
+      },
+      {
+        "node": 32,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 671,
+        "defaults": 671
+      },
+      {
+        "node": 33,
+        "leaf": false,
+        "feature": "intent_DEBTCONSOLIDATION",
+        "threshold": 0.5,
+        "left": 34,
+        "right": 41,
+        "n": 1808,
+        "defaults": 788
+      },
+      {
+        "node": 34,
+        "leaf": false,
+        "feature": "intent_MEDICAL",
+        "threshold": 0.5,
+        "left": 35,
+        "right": 38,
+        "n": 1512,
+        "defaults": 514
+      },
+      {
+        "node": 35,
+        "leaf": false,
+        "feature": "person_income",
+        "threshold": 34900.0,
+        "left": 36,
+        "right": 37,
+        "n": 1191,
+        "defaults": 241
+      },
+      {
+        "node": 36,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 128,
+        "defaults": 58
+      },
+      {
+        "node": 37,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 1063,
+        "defaults": 183
+      },
+      {
+        "node": 38,
+        "leaf": false,
+        "feature": "home_MORTGAGE",
+        "threshold": 0.5,
+        "left": 39,
+        "right": 40,
+        "n": 321,
+        "defaults": 273
+      },
+      {
+        "node": 39,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 212,
+        "defaults": 164
+      },
+      {
+        "node": 40,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 109,
+        "defaults": 109
+      },
+      {
+        "node": 41,
+        "leaf": false,
+        "feature": "home_MORTGAGE",
+        "threshold": 0.5,
+        "left": 42,
+        "right": 45,
+        "n": 296,
+        "defaults": 274
+      },
+      {
+        "node": 42,
+        "leaf": false,
+        "feature": "int_rate_model",
+        "threshold": 15.079999923706055,
+        "left": 43,
+        "right": 44,
+        "n": 156,
+        "defaults": 134
+      },
+      {
+        "node": 43,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 51,
+        "defaults": 39
+      },
+      {
+        "node": 44,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 105,
+        "defaults": 95
+      },
+      {
+        "node": 45,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 140,
+        "defaults": 140
+      },
+      {
+        "node": 46,
+        "leaf": false,
+        "feature": "home_RENT",
+        "threshold": 0.5,
+        "left": 47,
+        "right": 60,
+        "n": 2708,
+        "defaults": 1921
+      },
+      {
+        "node": 47,
+        "leaf": false,
+        "feature": "person_income",
+        "threshold": 19900.0,
+        "left": 48,
+        "right": 49,
+        "n": 1050,
+        "defaults": 269
+      },
+      {
+        "node": 48,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 63,
+        "defaults": 63
+      },
+      {
+        "node": 49,
+        "leaf": false,
+        "feature": "grade_num",
+        "threshold": 3.5,
+        "left": 50,
+        "right": 55,
+        "n": 987,
+        "defaults": 206
+      },
+      {
+        "node": 50,
+        "leaf": false,
+        "feature": "home_OWN",
+        "threshold": 0.5,
+        "left": 51,
+        "right": 54,
+        "n": 790,
+        "defaults": 90
+      },
+      {
+        "node": 51,
+        "leaf": false,
+        "feature": "grade_num",
+        "threshold": 2.5,
+        "left": 52,
+        "right": 53,
+        "n": 581,
+        "defaults": 90
+      },
+      {
+        "node": 52,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 467,
+        "defaults": 56
+      },
+      {
+        "node": 53,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 114,
+        "defaults": 34
+      },
+      {
+        "node": 54,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 209,
+        "defaults": 0
+      },
+      {
+        "node": 55,
+        "leaf": false,
+        "feature": "intent_MEDICAL",
+        "threshold": 0.5,
+        "left": 56,
+        "right": 59,
+        "n": 197,
+        "defaults": 116
+      },
+      {
+        "node": 56,
+        "leaf": false,
+        "feature": "person_age",
+        "threshold": 24.5,
+        "left": 57,
+        "right": 58,
+        "n": 147,
+        "defaults": 68
+      },
+      {
+        "node": 57,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 61,
+        "defaults": 35
+      },
+      {
+        "node": 58,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 86,
+        "defaults": 33
+      },
+      {
+        "node": 59,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 50,
+        "defaults": 48
+      },
+      {
+        "node": 60,
+        "leaf": false,
+        "feature": "lti",
+        "threshold": 0.3078511953353882,
+        "left": 61,
+        "right": 62,
+        "n": 1658,
+        "defaults": 1652
+      },
+      {
+        "node": 61,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 55,
+        "defaults": 49
+      },
+      {
+        "node": 62,
+        "leaf": true,
+        "feature": null,
+        "threshold": null,
+        "left": null,
+        "right": null,
+        "n": 1603,
+        "defaults": 1603
+      }
+    ],
+    "n_leaves": 32,
+    "feature_importance": {
+      "lti": 0.3313721876815646,
+      "grade_num": 0.24239928619602238,
+      "person_income": 0.0936720036123112,
+      "emp_length_model": 0.03240547741918471,
+      "int_rate_model": 0.003914937483881068,
+      "person_age": 0.0012026310483847205,
+      "cb_person_cred_hist_length": 0.0,
+      "loan_amnt": 0.0,
+      "prior_default": 0.0,
+      "emp_unknown": 0.0,
+      "home_MORTGAGE": 0.002118696955479588,
+      "home_OTHER": 0.0,
+      "home_OWN": 0.0015150739238421525,
+      "home_RENT": 0.1906900759906646,
+      "intent_EDUCATION": 0.0008837553866923424,
+      "intent_DEBTCONSOLIDATION": 0.03488539604554838,
+      "intent_HOMEIMPROVEMENT": 0.009076312083784547,
+      "intent_MEDICAL": 0.05452199586006757,
+      "intent_PERSONAL": 0.0,
+      "intent_VENTURE": 0.0013421703125719266
+    },
+    "test_auc": 0.9053084572579222,
+    "train_auc": 0.9060873811631303
+  },
+  "benchmark_gradient_boosting_test_auc": 0.9442951554813505
+}

@@ -1,0 +1,7 @@
+# Needed only to re-run scripts/prepare_data_and_fit_models.py
+# (the Excel workbook itself has no dependencies)
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+statsmodels>=0.14
+scikit-learn>=1.3
