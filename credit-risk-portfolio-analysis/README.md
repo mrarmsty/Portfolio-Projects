@@ -21,7 +21,7 @@ Roughly one in five loans in the book defaulted, yet management lacked:
 - a way to identify specific segments where lending should be tightened; and
 - a forward-looking estimate of default risk for new applications.
 
-Without these, the loan grade is the only ready-made risk signal — and, as this analysis shows, grade alone misses much of the risk that application data can reveal. The project is designed to support decisions on lending limits, approval rules, review routing and ongoing risk monitoring.
+Without these, the loan grade is the only ready-made risk signal - and, as this analysis shows, grade alone misses much of the risk that application data can reveal. The project is designed to support decisions on lending limits, approval rules, review routing and ongoing risk monitoring.
 
 ## Objectives
 
@@ -42,20 +42,20 @@ Without these, the loan grade is the only ready-made risk signal — and, as thi
 
 ## Dataset
 
-- **Source:** `credit_risk_dataset.csv`, supplied for the project — 32,581 loans and 12 fields covering borrower age, income, home ownership and employment length; loan purpose, grade, amount, interest rate and loan-to-income; credit-bureau history; and the repayment outcome (`loan_status`, 1 = default).
+- **Source:** `credit_risk_dataset.csv`, supplied for the project - 32,581 loans and 12 fields covering borrower age, income, home ownership and employment length; loan purpose, grade, amount, interest rate and loan-to-income; credit-bureau history; and the repayment outcome (`loan_status`, 1 = default).
 - **Nature of the data:** the file has no documentation, IDs or dates and matches a widely circulated public practice dataset. It is **not** the records of a real lender. Some patterns in it are near-deterministic (for example, almost every renter who borrowed more than 30% of their income defaulted), which suggests it may be partly rule-generated. Results should be read as a demonstration of method, not as evidence about real borrowers.
 - **Scope:** a single snapshot with no application dates, so trends over time cannot be analysed. Currency is not documented.
 
 ## Project workflow
 
-1. **Data assessment** — profiled every field, checked completeness, validity, uniqueness and internal consistency.
-2. **Data cleaning** — removed 165 exact duplicates (second copies sat in two contiguous file blocks, pointing to an overlapping extract) and 5 records with impossible ages; set 2 impossible employment lengths and 11 placeholder interest rates to missing; kept and flagged missing values instead of deleting them. 32,581 → **32,411 loans**, every exclusion logged.
-3. **Integrity investigation** — found that the supplied loan-to-income field disagrees with loan ÷ income in 428 records, *all of them defaults*. Recomputed the ratio, flagged the records and showed the conclusions are unchanged either way.
-4. **Transformation** — built 19 formula columns in the Excel table: loan-to-income, ln(income), seven analysis bands, model inputs, model scores and a risk band. New rows added to the table are banded and scored automatically.
-5. **Analysis** — portfolio profiling; chi-square tests with Cramér's V and Welch t-tests for every driver; within-grade pricing analysis; Weight of Evidence / Information Value; heat maps and a ranked segment table across 140 grade × housing × loan-to-income combinations.
-6. **Modelling** — logistic regression (with variable selection and a linearity check) and a depth-limited decision tree tuned by 5-fold cross-validation, both trained on a stratified 70% sample and evaluated on a 30% hold-out.
-7. **Reporting** — dashboard, findings sheet with live evidence, applicant scorer.
-8. **Validation** — a QA sheet with 28 reconciliation checks (all pass), plus every KPI, test statistic and all 32,411 model scores reconciled against independent Python calculations.
+1. **Data assessment** - profiled every field, checked completeness, validity, uniqueness and internal consistency.
+2. **Data cleaning** - removed 165 exact duplicates (second copies sat in two contiguous file blocks, pointing to an overlapping extract) and 5 records with impossible ages; set 2 impossible employment lengths and 11 placeholder interest rates to missing; kept and flagged missing values instead of deleting them. 32,581 → **32,411 loans**, every exclusion logged.
+3. **Integrity investigation** - found that the supplied loan-to-income field disagrees with loan ÷ income in 428 records, *all of them defaults*. Recomputed the ratio, flagged the records and showed the conclusions are unchanged either way.
+4. **Transformation** - built 19 formula columns in the Excel table: loan-to-income, ln(income), seven analysis bands, model inputs, model scores and a risk band. New rows added to the table are banded and scored automatically.
+5. **Analysis** - portfolio profiling; chi-square tests with Cramér's V and Welch t-tests for every driver; within-grade pricing analysis; Weight of Evidence / Information Value; heat maps and a ranked segment table across 140 grade × housing × loan-to-income combinations.
+6. **Modelling** - logistic regression (with variable selection and a linearity check) and a depth-limited decision tree tuned by 5-fold cross-validation, both trained on a stratified 70% sample and evaluated on a 30% hold-out.
+7. **Reporting** - dashboard, findings sheet with live evidence, applicant scorer.
+8. **Validation** - a QA sheet with 28 reconciliation checks (all pass), plus every KPI, test statistic and all 32,411 model scores reconciled against independent Python calculations.
 
 ## Key findings
 
@@ -67,25 +67,25 @@ Without these, the loan grade is the only ready-made risk signal — and, as thi
 
 ![High-risk segment heat maps](outputs/charts/segments_heatmaps.png)
 
-Filtering the dashboard to this group shows the tool doing its job — 1,698 renters at 30–40% LTI, a 92.3% default rate and an automatic HIGH RISK alert:
+Filtering the dashboard to this group shows the tool doing its job - 1,698 renters at 30–40% LTI, a 92.3% default rate and an automatic HIGH RISK alert:
 
-![Dashboard filtered to renters at 30–40% loan-to-income](outputs/dashboard/dashboard_renters_lti_30_40.png)
+![Dashboard filtered to renters at 30-40% loan-to-income](outputs/dashboard/dashboard_renters_lti_30_40.png)
 
-**4. Risk jumps sharply between grades C and D.** Grades A–C default at 10–21%; grade D jumps to 59%, rising to 98% in grade G. Grades D–G are 15.1% of loans. The prior-default flag appears only in grades C–G, so the grade already encodes credit history.
+**4. Risk jumps sharply between grades C and D.** Grades A-C default at 10-21%; grade D jumps to 59%, rising to 98% in grade G. Grades D-G are 15.1% of loans. The prior-default flag appears only in grades C–G, so the grade already encodes credit history.
 
-**5. Interest rate mirrors grade and adds little on its own.** Defaulters paid 2.6 percentage points more on average, but within each grade, loans priced above the grade's median rate default at about the same rate as those priced below it (grade C: 20.8% vs 20.8%; grade D: 60.0% vs 59.0%). Rate is a consequence of the grade, not an independent risk signal — which is why it dropped out of the logistic model.
+**5. Interest rate mirrors grade and adds little on its own.** Defaulters paid 2.6 percentage points more on average, but within each grade, loans priced above the grade's median rate default at about the same rate as those priced below it (grade C: 20.8% vs 20.8%; grade D: 60.0% vs 59.0%). Rate is a consequence of the grade, not an independent risk signal - which is why it dropped out of the logistic model.
 
-**6. Income, housing and employment matter; age and credit-history length do not.** Borrowers earning under 25k default at 54.6% versus 8.4% above 120k. Renters default at 31.6% versus 12.6% for mortgage holders and 7.5% for owners. Default falls steadily with employment length (28.0% under one year to 16.2% over ten), and borrowers with *unknown* employment length default at 31.7% — missing data is itself a warning sign. Age and credit-history length show negligible association (Cramér's V ≈ 0.03).
+**6. Income, housing and employment matter; age and credit-history length do not.** Borrowers earning under 25k default at 54.6% versus 8.4% above 120k. Renters default at 31.6% versus 12.6% for mortgage holders and 7.5% for owners. Default falls steadily with employment length (28.0% under one year to 16.2% over ten), and borrowers with *unknown* employment length default at 31.7% - missing data is itself a warning sign. Age and credit-history length show negligible association (Cramér's V ≈ 0.03).
 
-**7. Default can be predicted well from application data — and much better than by grade alone.**
+**7. Default can be predicted well from application data - and much better than by grade alone.**
 
-| Test set (9,724 loans) | Logistic regression | Decision tree | Grade D–G rule |
+| Test set (9,724 loans) | Logistic regression | Decision tree | Grade D-G rule |
 |---|---|---|---|
 | AUC | 0.880 | **0.905** | 0.728 |
 | Defaults caught at a 50% threshold (recall) | 57.5% | **68.3%** | 43.2% |
 | Flagged loans that did default (precision) | 77.5% | **96.4%** | 61.6% |
 
-The decision tree wins because the risk is driven by *interactions* — a high loan-to-income ratio is far more dangerous for a renter than for a homeowner — which a main-effects logistic model cannot capture. At the lowest-cost threshold (assuming a missed default costs five times a false alarm) the tree catches 74% of defaults while flagging only 4% of good loans. Its "Very high" risk band holds 4,992 loans with a 96.7% actual default rate; its "Low" band holds 16,243 loans at 4.1%.
+The decision tree wins because the risk is driven by *interactions* - a high loan-to-income ratio is far more dangerous for a renter than for a homeowner - which a main-effects logistic model cannot capture. At the lowest-cost threshold (assuming a missed default costs five times a false alarm) the tree catches 74% of defaults while flagging only 4% of good loans. Its "Very high" risk band holds 4,992 loans with a 96.7% actual default rate; its "Low" band holds 16,243 loans at 4.1%.
 
 ![Model evaluation](outputs/charts/model_evaluation.png)
 
@@ -98,7 +98,7 @@ The decision tree wins because the risk is driven by *interactions* — a high l
 | Immediate | Introduce a loan-to-income limit: 30%+ goes to manual review; above 40% requires a lower amount or extra security | Default jumps from 21% to 64% at the 30% threshold |
 | Immediate | Treat "renter + LTI ≥ 30%" as a hard policy rule and track its share of new lending as a key risk indicator | 94.8% default rate; one-third of all defaults |
 | Immediate | Make employment length a mandatory, verified field | Unknown employment defaults at 31.7% |
-| Medium term | Review pricing and approval limits for grades D–G and recalibrate grade boundaries | 59–98% default rates in D–G |
+| Medium term | Review pricing and approval limits for grades D–G and recalibrate grade boundaries | 59-98% default rates in D–G |
 | Medium term | Pilot the decision-tree score as a second-line check: route High / Very high applications to senior review | AUC 0.905 vs 0.728 for grade alone |
 | Medium term | Agree the real cost of a missed default vs a declined good loan with Finance, then set the model threshold | Threshold tool in the workbook |
 | Long term | Capture origination dates, loan IDs, balances at default, recoveries and a written default definition; fix the LTI calculation at source | Needed for trend, vintage and expected-loss monitoring |
@@ -156,7 +156,7 @@ The workbook replaces one-off analysis with a reusable monitoring tool. A credit
 ## Limitations and assumptions
 
 - **Data provenance:** the dataset appears to be a public practice dataset with some rule-like patterns, so model accuracy is likely higher than it would be on real applications.
-- **No dates:** no trend, seasonality or vintage analysis, and no out-of-time validation — the models were validated on a random 30% hold-out only.
+- **No dates:** no trend, seasonality or vintage analysis, and no out-of-time validation - the models were validated on a random 30% hold-out only.
 - **Undocumented definitions:** the meaning of default, the observation window and the currency are unknown; `loan_status = 1` is assumed to mean default.
 - **No loss data:** exposure is the original loan amount; balances at default and recoveries are not available, so expected loss cannot be estimated.
 - **Approved loans only:** the data contains only loans that were granted, so models learn nothing about rejected applicants (no reject inference).
