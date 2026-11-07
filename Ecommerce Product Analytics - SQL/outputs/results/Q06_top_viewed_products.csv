@@ -1,0 +1,16 @@
+view_rank,product_id,product_name,category_name,views,viewers,pct_of_views,cumulative_pct,units_rank,view_to_purchase_pct
+1,P0022,Voltix Tablet K45,Phones & Tablets,12399,6061,3.99,3.99,5,6.29
+2,P0108,Stride Chinos F33,Fashion,9337,5164,3.01,7.0,17,2.54
+3,P0035,Voltix Soundbar T58,Electronics,8000,4415,2.58,9.58,9,3.51
+4,P0127,Naturelle Vitamin C Serum D49,Health & Beauty,7527,4229,2.42,12.0,1,13.88
+5,P0151,Kitchenix Air Fryer U17,Home & Kitchen,5910,3513,1.9,13.9,42,1.94
+6,P0240,Lagoon Press Novel - Paperback D75,Books & Stationery,5655,3166,1.82,15.72,23,2.65
+7,P0057,Corelink Laptop 14in K13,Computing,5637,3161,1.82,17.54,34,3.01
+8,P0190,Farmfresh Instant Noodles (Carton) X98,Groceries,5500,3283,1.77,19.31,2,12.76
+9,P0089,Stride Ankara Midi Dress G52,Fashion,5230,3483,1.68,20.99,7,6.03
+10,P0003,Voltix Feature Phone V36,Phones & Tablets,5130,3368,1.65,22.65,87,1.43
+11,P0038,Sonara Inverter 1.5kVA J13,Electronics,4842,3174,1.56,24.21,26,3.18
+12,P0095,Kente & Co Handbag N33,Fashion,4331,2957,1.39,25.6,38,2.43
+13,P0226,Kinetix Dumbbell Set 20kg N77,Sports & Fitness,4313,2432,1.39,26.99,8,7.24
+14,P0117,Glowa Shea Body Butter V48,Health & Beauty,4235,2696,1.36,28.35,3,13.91
+15,P0083,Stride Denim Jacket R43,Fashion,3948,2816,1.27,29.62,27,3.3

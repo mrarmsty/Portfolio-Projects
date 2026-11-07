@@ -1,0 +1,20 @@
+check_id,dimension,table_name,check_desc,affected_rows,total_rows,pct_affected,action
+DQ01,completeness,events,product_view events with no product_id (untraceable product),1414,311955,0.45,Kept and flagged (product_traceable = 0). Counted in engagement totals; excluded from product-level metrics.
+DQ02,completeness,events,add_to_cart events with no product_id,127,28941,0.44,Kept and flagged. Counted in the user and session funnels; excluded from product cart-abandonment metrics.
+DQ03,completeness,events,traceable product_view events with no displayed price,901,311955,0.29,Kept. Price is not used for view metrics; promotion status is taken from the promotions tables instead.
+DQ04,completeness,users,users with no signup_date (guest visitors who never registered),19414,30000,64.71,Expected by design. Recoded to is_registered = 0 and analysed as a user segment.
+DQ05,uniqueness,events,"duplicate events (same session, timestamp, event type and product)",0,590648,0.0,None found; no de-duplication needed.
+DQ06,integrity,all tables,foreign-key violations reported by PRAGMA foreign_key_check,0,608352,0.0,None found.
+DQ07,consistency,events / sessions,"events whose user differs from the session user, or that fall outside the session window",0,590648,0.0,None found.
+DQ08,consistency,orders / events,orders with no purchase event in the event stream (tracking loss),206,6896,2.99,Orders table treated as the system of record for purchases; event-tracked purchases reported only for reconciliation.
+DQ09,consistency,order_items / events,order lines with no matching purchase event,311,10808,2.88,As DQ08: product purchases are measured from order_items.
+DQ10,consistency,orders / order_items,orders whose subtotal or discount does not equal the sum of their lines,0,6896,0.0,None found.
+DQ11,consistency,orders / events,orders placed in a session with no add_to_cart event (cart filled in an earlier session),1934,6896,28.05,Not an error: cross-session purchase journeys. The user-level funnel is the primary funnel; the session funnel is reported alongside.
+DQ12,validity,events / products,product events dated after the product's discontinued_date,10,355856,0.0,Kept (plausibly stale catalogue pages); too few to affect results.
+DQ13,validity,events / promotions,product views priced below list price with no promotion active for the product,2,311049,0.0,Kept; negligible.
+DQ14,validity,sessions,sessions with session_end = session_start (single-event sessions),392,89557,0.44,Kept; duration recorded as 0 seconds.
+DQ15,timeliness,users / sessions,registered users whose signup_date is after their first observed session,1959,10586,18.51,"Expected (guests who registered later). Registration is analysed as status at extract date, not at first visit."
+DQ16,timeliness,sessions,sessions ending after the last calendar date (crossing midnight on 4 Jan 2026),1,89557,0.0,Kept; sessions are dated by session_start.
+DQ17,validity,sessions,"sessions with a bot-like user agent (bot, spider, crawl, headless, curl, python)",0,89557,0.0,None found; heavy users (up to 81 sessions) kept as genuine.
+DQ18,validity,products,products priced at >= 4x or <= 0.25x their category median list price,12,250,4.8,"Kept (no reference prices to correct against). Several product types carry implausible prices for their kind (e.g. wireless mice above some laptops), so revenue rankings are treated as indicative; product analysis relies on counts and conversion."
+DQ19,validity,events (staging),"staged event values needing conversion: non-integer ids or amounts, non-ISO timestamps, untidy event types, blank ids",0,590648,0.0,None found. The typed load still applies CAST / strftime / TRIM / NULLIF so a future extract with format drift fails loudly.

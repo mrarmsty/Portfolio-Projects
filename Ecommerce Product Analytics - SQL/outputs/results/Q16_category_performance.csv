@@ -1,0 +1,11 @@
+orders_rank,category_name,department,products,views,viewers,buyers,orders,units,net_revenue,net_revenue_per_unit,view_to_cart_pct,view_to_purchase_pct,pct_of_views,pct_of_orders,pct_of_net_revenue,revenue_rank
+1,Health & Beauty,Fashion & Lifestyle,32,33982,9097,1409,1699,3552,18231750,5133.0,35.56,15.49,10.9,18.5,3.6,6
+2,Groceries,Supermarket,30,28400,7936,1262,1505,3435,17181900,5002.0,36.87,15.9,9.2,16.4,3.4,7
+3,Fashion,Fashion & Lifestyle,40,53120,12252,1207,1414,2131,31357400,14715.0,29.87,9.84,17.1,15.4,6.1,4
+4,Phones & Tablets,Electronics & Technology,22,46996,11229,904,994,1088,181108300,166460.0,20.02,8.04,15.1,10.8,35.4,1
+5,Electronics,Electronics & Technology,28,37704,9757,750,828,1165,37935100,32562.0,22.47,7.69,12.1,9.0,7.4,3
+6,"Baby, Kids & Toys",Family,18,22375,6737,694,773,1130,20168350,17848.0,24.55,10.27,7.2,8.4,3.9,5
+7,Home & Kitchen,Home & Living,30,30775,8404,546,592,819,15892900,19405.0,20.01,6.49,9.9,6.5,3.1,8
+8,Books & Stationery,Family,18,19550,6019,517,580,1118,4262100,3812.0,22.31,8.59,6.3,6.3,0.8,10
+9,Sports & Fitness,Family,14,15391,4878,378,408,557,13052450,23433.0,19.11,7.75,5.0,4.5,2.5,9
+10,Computing,Electronics & Technology,18,22248,6633,347,370,391,173007350,442474.0,12.38,5.23,7.2,4.0,33.8,2

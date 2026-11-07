@@ -1,0 +1,4 @@
+pair,products,spearman_rho
+views vs net revenue,250,0.599
+views vs units sold,250,0.517
+views vs view-to-purchase rate,250,-0.177

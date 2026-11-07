@@ -1,0 +1,16 @@
+conversion_rank,product_id,product_name,category_name,list_price,viewers,viewer_buyers,view_to_purchase_pct,wilson_lower_pct,view_rank,units_rank
+1,P0174,Daily Basket Instant Noodles (Carton) A34,Groceries,4550,553,97,17.54,14.6,134,11
+2,P0127,Naturelle Vitamin C Serum D49,Health & Beauty,5100,4229,587,13.88,12.87,4,1
+3,P0117,Glowa Shea Body Butter V48,Health & Beauty,3900,2696,375,13.91,12.65,14,3
+4,P0190,Farmfresh Instant Noodles (Carton) X98,Groceries,4250,3283,419,12.76,11.66,8,2
+5,P0202,Playmore Baby Wipes 3-Pack F67,"Baby, Kids & Toys",13900,643,78,12.13,9.83,113,32
+6,P0109,Ori Botanics Shea Body Butter U44,Health & Beauty,5900,2102,230,10.94,9.68,28,6
+7,P0176,Daily Basket Tea Bags 50ct V27,Groceries,7700,2136,219,10.25,9.04,24,4
+8,P0196,Mama's Pantry Parboiled Rice 5kg K20,Groceries,5200,1183,112,9.47,7.93,48,12
+9,P0195,Mama's Pantry Jollof Rice Seasoning Z96,Groceries,17400,708,66,9.32,7.39,102,29
+10,P0209,Bumble School Backpack G74,"Baby, Kids & Toys",6100,535,51,9.53,7.32,138,49
+11,P0094,Adire House Polo Shirt L74,Fashion,10400,1540,132,8.57,7.27,37,15
+12,P0208,Playmore Baby Wipes 3-Pack L17,"Baby, Kids & Toys",14500,1639,138,8.42,7.17,33,14
+13,P0071,Stride Leather Sandals V46,Fashion,8800,788,69,8.76,6.98,96,41
+14,P0021,Voltix Smartphone M78,Phones & Tablets,169000,1169,95,8.13,6.69,52,36
+15,P0116,Naturelle Hair Extensions W45,Health & Beauty,3800,1107,88,7.95,6.5,55,19

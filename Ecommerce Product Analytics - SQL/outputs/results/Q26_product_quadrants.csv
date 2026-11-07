@@ -1,0 +1,5 @@
+quadrant,products,views,pct_of_views,units,pct_of_units,pooled_view_to_purchase_pct
+"Traffic without sales: high traffic, low conversion",75,147192,47.4,3170,20.6,2.51
+"Star: high traffic, high conversion",51,104695,33.7,8221,53.4,7.42
+"Hidden gem: low traffic, high conversion",75,35253,11.4,3356,21.8,7.04
+"Low priority: low traffic, low conversion",49,23401,7.5,639,4.2,2.44

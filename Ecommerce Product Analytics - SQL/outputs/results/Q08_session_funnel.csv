@@ -1,0 +1,6 @@
+stage_no,stage,sessions,step_conversion_pct,sessions_lost,pct_of_all_sessions,all_order_sessions
+1,All sessions,89557,,,100.0,6896
+2,Viewed a product,74987,83.73,14570,83.73,6896
+3,Added to cart,21361,28.49,53626,23.85,6896
+4,Began checkout,6976,32.66,14385,7.79,6896
+5,Placed an order,4962,71.13,2014,5.54,6896

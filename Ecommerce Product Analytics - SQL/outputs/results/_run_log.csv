@@ -1,0 +1,71 @@
+sql_file,kind,block,seconds,rows
+sql/ecommerce_product_analytics.sql,exec,1.1 connection settings and read-only attachment of the raw database,0.0,
+sql/ecommerce_product_analytics.sql,exec,1.2 drop analysis objects so the script can be re-run from scratch,0.0,
+sql/ecommerce_product_analytics.sql,exec,2.1 reference tables,0.0,
+sql/ecommerce_product_analytics.sql,exec,2.2 behavioural and transactional tables,3.2,
+sql/ecommerce_product_analytics.sql,exec,2.3 indexes for the join and window patterns used below,2.32,
+sql/ecommerce_product_analytics.sql,exec,2.4 load audit: source rows vs loaded rows for every table,0.02,
+sql/ecommerce_product_analytics.sql,query,Q00_load_audit,0.0,10
+sql/ecommerce_product_analytics.sql,exec,2.5 detach the raw database: everything after this point reads only the analysis copy,0.0,
+sql/ecommerce_product_analytics.sql,exec,3.1 data-quality register,9.03,
+sql/ecommerce_product_analytics.sql,query,Q00_dq_register,0.0,19
+sql/ecommerce_product_analytics.sql,query,Q00_column_completeness,0.51,7
+sql/ecommerce_product_analytics.sql,query,Q00_outlier_profile,0.24,2
+sql/ecommerce_product_analytics.sql,exec,4.0 drop derived tables (allows Section 4 to be re-run on its own),0.0,
+sql/ecommerce_product_analytics.sql,exec,"4.1 events_enriched: every event with calendar, product and sequence attributes",3.69,
+sql/ecommerce_product_analytics.sql,exec,"4.2 session_summary: one row per session with engagement counts, funnel flags and the order outcome",1.79,
+sql/ecommerce_product_analytics.sql,exec,"4.3 user_summary: one row per user with lifecycle, engagement, funnel and return flags",0.95,
+sql/ecommerce_product_analytics.sql,exec,4.4 user_week_activity and cohort_retention (recursive CTE generates every week offset),0.29,
+sql/ecommerce_product_analytics.sql,exec,4.5 user_product_purchases and cart_add_outcomes (product-level purchase and abandonment base),1.15,
+sql/ecommerce_product_analytics.sql,exec,"4.6 product_performance: one row per product with views, carts, purchases, conversion and ranks",0.21,
+sql/ecommerce_product_analytics.sql,exec,4.7 category_performance: category-level funnel and purchase activity (distinct users counted at category level),1.4,
+sql/ecommerce_product_analytics.sql,query,Q00_derived_table_sizes,0.01,9
+sql/ecommerce_product_analytics.sql,query,Q01_platform_overview,0.07,1
+sql/ecommerce_product_analytics.sql,query,Q02_session_engagement,0.18,1
+sql/ecommerce_product_analytics.sql,query,Q03_return_frequency,0.02,6
+sql/ecommerce_product_analytics.sql,query,Q03b_time_between_sessions,0.09,1
+sql/ecommerce_product_analytics.sql,query,Q04_weekly_engagement_trend,0.23,26
+sql/ecommerce_product_analytics.sql,query,Q05_engagement_by_platform,0.07,7
+sql/ecommerce_product_analytics.sql,query,Q06_top_viewed_products,0.0,15
+sql/ecommerce_product_analytics.sql,query,Q06b_view_concentration,0.0,3
+sql/ecommerce_product_analytics.sql,query,Q07_user_funnel,0.02,5
+sql/ecommerce_product_analytics.sql,query,Q07b_purchase_reconciliation,0.06,1
+sql/ecommerce_product_analytics.sql,query,Q08_session_funnel,0.06,5
+sql/ecommerce_product_analytics.sql,query,Q09_funnel_by_segment,0.37,14
+sql/ecommerce_product_analytics.sql,query,Q10_cart_to_order_timing,0.16,6
+sql/ecommerce_product_analytics.sql,query,Q11_after_add_to_cart,0.48,6
+sql/ecommerce_product_analytics.sql,query,Q12_checkout_abandonment,0.08,8
+sql/ecommerce_product_analytics.sql,query,Q12b_cart_abandonment_overall,0.01,1
+sql/ecommerce_product_analytics.sql,query,Q13_popularity_vs_purchases,0.0,3
+sql/ecommerce_product_analytics.sql,query,Q13b_top_viewed_vs_top_sellers,0.0,1
+sql/ecommerce_product_analytics.sql,query,Q14_top_conversion_products,0.0,15
+sql/ecommerce_product_analytics.sql,query,Q15_high_interest_low_conversion,0.0,19
+sql/ecommerce_product_analytics.sql,query,Q16_category_performance,0.0,10
+sql/ecommerce_product_analytics.sql,query,Q17_cart_abandonment_products,0.0,15
+sql/ecommerce_product_analytics.sql,query,Q17b_abandonment_by_category_and_price,0.07,15
+sql/ecommerce_product_analytics.sql,query,Q18_promotion_periods,0.06,7
+sql/ecommerce_product_analytics.sql,query,Q19_returning_users,0.05,1
+sql/ecommerce_product_analytics.sql,query,Q20_cohort_retention_matrix,0.0,26
+sql/ecommerce_product_analytics.sql,query,Q21_retention_week_1_2_4,0.07,9
+sql/ecommerce_product_analytics.sql,query,Q22_cohort_quality_trend,0.06,26
+sql/ecommerce_product_analytics.sql,query,Q23_segment_repeat_engagement,0.26,31
+sql/ecommerce_product_analytics.sql,query,Q24_repeat_purchase,0.03,1
+sql/ecommerce_product_analytics.sql,query,Q25_opportunity_summary,0.03,6
+sql/ecommerce_product_analytics.sql,exec,"6.1 daily and weekly KPI views (moving averages, running totals, period-over-period change)",0.0,
+sql/ecommerce_product_analytics.sql,exec,6.2 funnel views,0.0,
+sql/ecommerce_product_analytics.sql,exec,6.3 product and category scorecards,0.0,
+sql/ecommerce_product_analytics.sql,exec,6.4 retention views,0.0,
+sql/ecommerce_product_analytics.sql,query,Q26_product_quadrants,0.0,4
+sql/ecommerce_product_analytics.sql,query,Q27_daily_kpis,0.06,182
+sql/ecommerce_product_analytics.sql,query,Q28_weekly_kpis,0.25,26
+sql/ecommerce_product_analytics.sql,export,events_enriched.gz,5.35,590648
+sql/ecommerce_product_analytics.sql,export,session_summary,0.91,89557
+sql/ecommerce_product_analytics.sql,export,user_summary,0.3,30000
+sql/ecommerce_product_analytics.sql,export,product_scorecard,0.01,250
+sql/ecommerce_product_analytics.sql,export,category_scorecard,0.0,10
+sql/ecommerce_product_analytics.sql,export,cohort_retention,0.0,351
+sql/ecommerce_product_analytics.sql,export,cart_add_outcomes,0.09,28814
+sql/ecommerce_product_analytics.sql,export,session_funnel_by_segment,0.13,196
+sql/ecommerce_product_analytics.sql,exec,7.1 validation checks,1.1,
+sql/ecommerce_product_analytics.sql,query,Q99_validation_results,0.0,27
+sql/ecommerce_product_analytics.sql,query,Q99_validation_summary,0.0,1

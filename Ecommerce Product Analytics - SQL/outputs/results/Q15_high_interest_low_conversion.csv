@@ -1,0 +1,20 @@
+product_id,product_name,category_name,list_price,views,viewers,view_to_purchase_pct,category_rate_pct,cart_abandonment_pct,buyers_gap_vs_category
+P0108,Stride Chinos F33,Fashion,18400,9337,5164,2.54,4.14,86.6,83
+P0125,Melanin Lab Shea Body Butter X82,Health & Beauty,5800,1302,1058,1.13,8.23,77.8,75
+P0003,Voltix Feature Phone V36,Phones & Tablets,274000,5130,3368,1.43,3.35,61.1,65
+P0212,Bumble Kids Sneakers P52,"Baby, Kids & Toys",14200,3642,1934,2.17,5.31,72.9,61
+P0095,Kente & Co Handbag N33,Fashion,13700,4331,2957,2.43,4.14,69.1,51
+P0148,Kelvo Chest Freezer 200L D32,Home & Kitchen,27700,3377,2332,1.11,2.76,90.3,39
+P0011,Axiom Feature Phone Y80,Phones & Tablets,402000,3701,2622,1.98,3.35,71.5,36
+P0151,Kitchenix Air Fryer U17,Home & Kitchen,14100,5910,3513,1.94,2.76,87.4,29
+P0020,Koratel Smartphone 5G F36,Phones & Tablets,181000,2365,1803,1.77,3.35,79.3,28
+P0058,Datum Laptop 15.6in R46,Computing,504000,2129,1534,0.59,2.41,80.0,28
+P0017,Koratel Smartphone Q38,Phones & Tablets,337000,3105,1779,1.85,3.35,50.0,27
+P0027,Voltix Soundbar F78,Electronics,70000,1612,1108,0.9,3.31,77.5,27
+P0165,HomeKraft Blender 1.5L L78,Home & Kitchen,17200,1735,1357,1.03,2.76,80.0,24
+P0016,Nuvo Smartphone 5G I18,Phones & Tablets,149000,1500,1150,1.39,3.35,55.6,22
+P0055,Zentel Mechanical Keyboard V38,Computing,565000,3178,2120,1.56,2.41,60.6,18
+P0005,Nuvo Smartphone N70,Phones & Tablets,115000,1220,1009,1.98,3.35,58.1,14
+P0046,Amplo Inverter 1.5kVA P68,Electronics,152000,1211,1005,2.09,3.31,77.3,12
+P0033,Amplo Wireless Earbuds F12,Electronics,169000,1507,1192,2.43,3.31,68.8,11
+P0054,Zentel Wireless Mouse H47,Computing,241000,2059,1500,2.0,2.41,71.9,6

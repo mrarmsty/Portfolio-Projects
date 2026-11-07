@@ -1,0 +1,9 @@
+platform,device_type,checkout_sessions,abandoned_checkouts,checkout_abandonment_pct,abandonment_rank
+ALL,ALL,9816,2920,29.75,
+web,desktop,3484,743,21.33,7
+web,mobile,3101,1154,37.21,1
+android_app,mobile,1970,643,32.64,4
+web,tablet,537,148,27.56,5
+ios_app,mobile,479,165,34.45,2
+android_app,tablet,129,28,21.71,6
+ios_app,tablet,116,39,33.62,3

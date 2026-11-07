@@ -1,0 +1,28 @@
+check_id,category,check_name,expected,actual,status
+V01,record counts,source tables loaded with no row loss (tables failing),0.0,0.0,PASS
+V02,record counts,events_enriched rows = events rows,590648.0,590648.0,PASS
+V03,record counts,every event mapped to a calendar week (unmapped events),0.0,0.0,PASS
+V04,record counts,session_summary rows = sessions rows,89557.0,89557.0,PASS
+V05,record counts,user_summary rows = users rows,30000.0,30000.0,PASS
+V06,duplicates,duplicate event_id in events_enriched,0.0,0.0,PASS
+V07,duplicates,duplicate cart additions in cart_add_outcomes,0.0,0.0,PASS
+V08,join integrity,foreign-key violations (PRAGMA foreign_key_check),0.0,0.0,PASS
+V09,aggregation,sum of session event counts = events,590648.0,590648.0,PASS
+V10,aggregation,sum of user session counts = sessions,89557.0,89557.0,PASS
+V11,aggregation,orders in session_summary = orders,6896.0,6896.0,PASS
+V12,aggregation,product views in product_performance = traceable product_view events,310541.0,310541.0,PASS
+V13,aggregation,units in product_performance = units in order_items,15386.0,15386.0,PASS
+V14,aggregation,weekly cohort sizes sum to all users,30000.0,30000.0,PASS
+V15,reconciliation,net revenue: user_summary = orders table,512197600.0,512197600.0,PASS
+V16,reconciliation,net revenue: product_performance = order_items of net orders,512197600.0,512197600.0,PASS
+V17,reconciliation,net revenue: category_performance = product_performance,512197600.0,512197600.0,PASS
+V18,reconciliation,closed user funnel final stage = all buyers (every buyer passed every stage),4655.0,4655.0,PASS
+V19,reconciliation,weekly orders in vw_weekly_kpis = orders,6896.0,6896.0,PASS
+V20,reconciliation,daily net revenue in vw_daily_kpis = user_summary net revenue,512197600.0,512197600.0,PASS
+V21,business rule,user funnel never increases from one stage to the next (violations),0.0,0.0,PASS
+V22,business rule,week-0 retention is 100% for every cohort (violations),0.0,0.0,PASS
+V23,business rule,"retention and conversion rates within [0, 1] (violations)",0.0,0.0,PASS
+V24,business rule,every order session contains a begin_checkout event (orders without),0.0,0.0,PASS
+V25,business rule,a same-session purchase is also a purchase within 7 days (violations),0.0,0.0,PASS
+V26,business rule,event-tracked buyers do not exceed order-based buyers (excess),0.0,0.0,PASS
+V27,business rule,censored return flags only for users with too little follow-up (violations),0.0,0.0,PASS

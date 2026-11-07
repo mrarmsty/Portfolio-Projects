@@ -1,0 +1,7 @@
+priority_order,opportunity,evidence,users_or_events,pct,base
+1,Viewers who never add to cart,user funnel,15240,56.8,of product viewers
+2,Cart users who never reach checkout,user funnel,5686,49.1,of cart users
+3,Checkout sessions that end without an order,session funnel,2920,29.7,of checkout sessions
+4,Cart additions not bought within 7 days,cart outcomes,19020,67.9,of cart additions with an outcome
+5,"High-traffic, low-converting products",product quartiles,19,7.6,"of the catalogue (top view quartile, bottom conversion quartile)"
+6,Users seen in only one session,return frequency,16704,55.7,of all users

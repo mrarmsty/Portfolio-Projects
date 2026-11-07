@@ -1,0 +1,5 @@
+# The SQL needs only SQLite 3.35+ (sqlite3 shell or Python's built-in sqlite3 module).
+# scripts/run_sql_project.py uses the Python standard library only.
+# scripts/make_charts.py needs:
+pandas>=2.0
+matplotlib>=3.7

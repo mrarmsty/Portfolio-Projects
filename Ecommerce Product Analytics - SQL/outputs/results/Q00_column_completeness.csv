@@ -1,0 +1,8 @@
+event_type,events,pct_null_product,pct_null_quantity,pct_null_price,pct_null_order
+product_view,311955,0.45,100.0,0.29,100.0
+page_view,157849,100.0,100.0,100.0,100.0
+search,65586,100.0,100.0,100.0,100.0
+add_to_cart,28941,0.44,0.0,0.0,100.0
+purchase,10497,0.0,0.0,0.0,0.0
+begin_checkout,9816,100.0,100.0,100.0,100.0
+remove_from_cart,6004,0.0,0.0,0.0,100.0

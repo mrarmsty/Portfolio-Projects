@@ -1,0 +1,2 @@
+unique_users,registered_users,guest_users,sessions,events,product_views,traceable_product_views,products_viewed,product_interactions,orders,buyers,net_orders,net_revenue,avg_net_order_value,sessions_per_user
+30000,10586,19414,89557,590648,311955,310541,250,357397,6896,4655,6235,512197600,82149.0,2.99

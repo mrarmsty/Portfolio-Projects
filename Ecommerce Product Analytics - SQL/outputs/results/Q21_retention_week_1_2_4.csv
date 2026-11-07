@@ -1,0 +1,10 @@
+population,week_offset,cohorts,users,retention_pct
+All users,1,25,29032,26.54
+All users,2,24,27984,19.27
+All users,4,22,25468,10.97
+Cohort weeks 3-26 only,1,23,25519,25.09
+Cohort weeks 3-26 only,2,22,24471,17.79
+Cohort weeks 3-26 only,4,20,21955,9.65
+Users not registered before the window,1,25,23174,20.03
+Users not registered before the window,2,24,22255,13.76
+Users not registered before the window,4,22,20061,6.78

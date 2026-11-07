@@ -1,0 +1,6 @@
+stage_no,stage,users,step_conversion_pct,users_lost,step_dropoff_pct,pct_of_product_viewers,dropoff_rank
+1,Visited the platform,30000,,,,,
+2,Viewed a product,26810,89.37,3190,10.63,100.0,
+3,Added to cart,11570,43.16,15240,56.84,43.16,1
+4,Began checkout,5884,50.86,5686,49.14,21.95,2
+5,Placed an order,4655,79.11,1229,20.89,17.36,3

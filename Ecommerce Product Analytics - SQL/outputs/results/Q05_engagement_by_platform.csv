@@ -1,0 +1,8 @@
+platform,device_type,sessions,pct_sessions,avg_product_interactions,avg_minutes,view_to_cart_pct,session_conversion_pct,conversion_vs_overall_pp
+web,mobile,34530,38.6,3.67,3.99,25.28,5.64,-2.06
+web,desktop,23505,26.2,4.7,5.49,33.88,11.66,3.96
+android_app,mobile,20002,22.3,3.74,4.06,27.05,6.63,-1.07
+ios_app,mobile,4860,5.4,3.55,3.93,27.28,6.46,-1.24
+web,tablet,4660,5.2,4.18,4.39,29.91,8.35,0.65
+android_app,tablet,1000,1.1,4.38,4.48,32.33,10.1,2.4
+ios_app,tablet,1000,1.1,4.26,4.42,31.17,7.7,-0.0

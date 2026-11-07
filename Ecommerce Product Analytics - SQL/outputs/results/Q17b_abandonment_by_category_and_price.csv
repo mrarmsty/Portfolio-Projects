@@ -1,0 +1,16 @@
+dimension,segment,cart_additions,abandonment_pct
+price quintile,Q4 (14700-28600),5600,73.1
+price quintile,Q3 (8500-14700),5600,70.0
+price quintile,Q5 (28600-895000),5600,66.9
+price quintile,Q2 (5100-8500),5600,64.9
+price quintile,Q1 (1700-5100),5601,64.7
+category,Home & Kitchen,2046,74.5
+category,Fashion,5286,73.3
+category,Electronics,2777,72.8
+category,Phones & Tablets,2760,67.4
+category,Books & Stationery,1696,66.5
+category,Sports & Fitness,1078,66.5
+category,"Baby, Kids & Toys",2150,65.6
+category,Computing,922,64.8
+category,Groceries,4449,63.9
+category,Health & Beauty,4837,62.9

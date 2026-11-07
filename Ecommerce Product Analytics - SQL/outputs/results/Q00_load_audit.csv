@@ -1,0 +1,11 @@
+table_name,source_rows,loaded_rows,status
+events,590648,590648,PASS
+sessions,89557,89557,PASS
+users,30000,30000,PASS
+order_items,10808,10808,PASS
+orders,6896,6896,PASS
+promotion_products,311,311,PASS
+products,250,250,PASS
+calendar,182,182,PASS
+categories,10,10,PASS
+promotions,6,6,PASS

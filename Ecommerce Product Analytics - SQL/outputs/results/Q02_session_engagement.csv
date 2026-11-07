@@ -1,0 +1,2 @@
+sessions,avg_events_per_session,avg_product_interactions_per_session,median_product_interactions,avg_interactions_when_any,avg_product_views_per_session,avg_distinct_products_when_viewing,pct_sessions_without_product_interaction,pct_single_event_sessions,pct_sessions_with_search,avg_session_minutes
+89557,6.6,3.99,3,4.77,3.48,3.41,16.27,22.71,42.81,4.43
