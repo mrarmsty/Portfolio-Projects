@@ -130,10 +130,10 @@ The build runs in about 35 seconds.
 |---|---|---|
 | Now | Fix purchase-event tracking and schedule the events-vs-orders reconciliation | 3% of orders are invisible to event-based reporting |
 | Now | Audit mobile-web checkout; review the 19 high-traffic, low-converting product pages; correct the 12 implausible prices | Largest intent loss; misallocated traffic; distorted revenue |
-| 1–3 months | A/B test the mobile checkout redesign, a persistent cart with "save for later", and cart reminders | 67.9% of cart additions are not bought within 7 days, and journeys span sessions |
-| 1–3 months | First-week re-engagement for new users; replenishment reminders for consumables | Retention is decided in days 1–7, and consumables convert and repeat |
-| 1–3 months | Judge paid social on downstream orders and retention, not traffic | Lowest add-to-cart, conversion and return rates |
-| 3–12 months | Test registration and loyalty prompts with randomised experiments before scaling them; track promotion cohorts after each event | The current differences are associations, not proven effects |
+| 1-3 months | A/B test the mobile checkout redesign, a persistent cart with "save for later", and cart reminders | 67.9% of cart additions are not bought within 7 days, and journeys span sessions |
+| 1-3 months | First-week re-engagement for new users; replenishment reminders for consumables | Retention is decided in days 1-7, and consumables convert and repeat |
+| 1-3 months | Judge paid social on downstream orders and retention, not traffic | Lowest add-to-cart, conversion and return rates |
+| 3-12 months | Test registration and loyalty prompts with randomised experiments before scaling them; track promotion cohorts after each event | The current differences are associations, not proven effects |
 
 Full reasoning, with evidence for each point: [insights and recommendations](docs/insights_and_recommendations.md).
 
@@ -179,7 +179,7 @@ The views can be connected straight to a BI tool, and the validation section can
 
 ## Limitations and assumptions
 
-- The data is synthetic; the findings demonstrate method, not facts about a real business.
+- The data is **synthetic**; the findings demonstrate method, not facts about a real business.
 - The analysis is observational. Differences between channels, devices, registration and loyalty groups are associations. Registration and loyalty are measured at extract date and may reflect engagement rather than cause it.
 - Users active before 7 July 2025 look new in the first two weeks (left-censoring). Late users have less follow-up (right-censoring). Both are handled explicitly but limit the earliest and latest cohorts.
 - Cart abandonment uses a 7-day window. 9.3% of orders come later than that, so some carts counted as abandoned are eventually bought.
