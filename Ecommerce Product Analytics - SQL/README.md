@@ -64,7 +64,7 @@ Three data issues shaped the method:
 - **Cross-session journeys.** 28% of orders finish a journey started in an earlier session, so the main funnel follows users rather than sessions.
 - **Implausible prices.** 12 products have list prices far from their category norm (a wireless mouse at 241,000), so revenue rankings are treated as indicative.
 
-Full details are in the [data dictionary](data/data_dictionary.md) and the [data-quality log](docs/data_quality_and_cleaning_log.md).
+Full details are in the [data dictionary](data) and the [data-quality log](docs/data_quality_and_cleaning_log.md).
 
 ## Project workflow
 
