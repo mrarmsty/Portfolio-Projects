@@ -18,7 +18,7 @@ looks at more than 100,000 inpatient encounters of diabetic patients to answer t
 2. **Which patients and encounters carry the highest risk?**
 3. **Can we flag high-risk patients at discharge, and what would that cost in workload?**
 
-The answers are delivered as an eight-page Power BI report built as a native Power BI Project (`.pbip`), supported by
+The answers are delivered as an eight-page Power BI report, supported by
 documented data preparation, statistical testing and two classification models.
 
 ## Business problem
