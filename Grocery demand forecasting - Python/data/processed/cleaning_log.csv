@@ -1,0 +1,13 @@
+issue,variable,action,reason,rows_affected
+Dates stored as text DD/MM/YYYY,sale_date,Parsed day-first to a true date,Mixed types break grouping and time-series indexing,6344
+Store code variants,store_code,Standardised to S01-S08,Same store keyed several ways,4192
+"Rows for store S99 (not in store master; 3 days, 1-5 units per row)",store_code,Excluded,"Training / test till feed, not a trading store",39
+Product family label variants,product_family,Mapped to the 13 master families (audited mapping table),Same family keyed with different spellings and legacy names,5203
+Exact duplicate rows,all,Removed,Re-uploaded rows would double count sales,520
+Same date-store-family loaded twice with different values,"units_sold, sales_value",Kept the most recent load_timestamp,Later loads are corrections of earlier extracts,156
+Negative units_sold with positive sales_value,units_sold,Sign corrected (absolute value),Value and units must have the same sign; value is positive,22
+Sales values ~100x too large for one store-month (recorded in kobo),sales_value,Divided by 100 for the whole affected store-month,"Unit values 100x the chain median, confined to one store-month",401
+Missing units_sold (value present),units_sold,Imputed = value / local unit price,Row is otherwise valid; dropping it would create a false zero-demand gap,260
+Missing sales_value (units present),sales_value,Imputed = units x local unit price,Keeps revenue totals complete; flagged for transparency,624
+Promotion flag variants (Y/N/Yes/No/1/0/TRUE/FALSE/blank),promo_flag,Mapped to 0/1 (blank = 0),One consistent indicator is required,7520
+Promotion rows missing promo_code,promo_code,"Filled from promotion calendar (store, family, date)",Needed to link sales to promotion attributes,489

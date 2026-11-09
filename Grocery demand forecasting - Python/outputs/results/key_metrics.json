@@ -1,0 +1,685 @@
+{
+  "raw_rows": 104833,
+  "clean_rows": 104118,
+  "reconciliation_units_identical_pct": 100.0,
+  "bulk_days": 52,
+  "total_units": 33457605,
+  "total_value_ngn": 68180344298,
+  "yearly": {
+    "2023": {
+      "units": 11146933,
+      "value_bn": 16.24,
+      "price": 1457.0,
+      "units_yoy": null,
+      "value_yoy": null
+    },
+    "2024": {
+      "units": 10869501,
+      "value_bn": 21.53,
+      "price": 1981.2,
+      "units_yoy": -2.5,
+      "value_yoy": 32.6
+    },
+    "2025": {
+      "units": 11441171,
+      "value_bn": 30.4,
+      "price": 2657.4,
+      "units_yoy": 5.3,
+      "value_yoy": 41.2
+    }
+  },
+  "category": {
+    "Fresh Food": {
+      "unit_share": 29.1,
+      "value_share": 35.0
+    },
+    "Pantry Staples": {
+      "unit_share": 27.9,
+      "value_share": 40.4
+    },
+    "Beverages": {
+      "unit_share": 22.0,
+      "value_share": 8.3
+    },
+    "Snacks & Confectionery": {
+      "unit_share": 12.0,
+      "value_share": 5.0
+    },
+    "Household & Personal Care": {
+      "unit_share": 8.9,
+      "value_share": 11.4
+    }
+  },
+  "top_families_units": [
+    "Soft Drinks & Water",
+    "Noodles & Pasta",
+    "Snacks & Confectionery"
+  ],
+  "store_rank_value": [
+    "Basketline Ikeja",
+    "Basketline Lekki",
+    "Basketline Wuse",
+    "Basketline Nassarawa Kano",
+    "Basketline GRA Port Harcourt",
+    "Basketline Surulere",
+    "Basketline Ring Road Ibadan",
+    "Basketline Ajah Express"
+  ],
+  "store_value_per_day_m": {
+    "S02": 12.33,
+    "S01": 11.8,
+    "S04": 8.78,
+    "S07": 7.68,
+    "S05": 7.43,
+    "S03": 6.77,
+    "S06": 6.43,
+    "S08": 3.11
+  },
+  "store_value_per_sqm_day": {
+    "S02": 3245.0,
+    "S01": 2811.0,
+    "S04": 3377.0,
+    "S07": 3492.0,
+    "S05": 3714.0,
+    "S03": 3759.0,
+    "S06": 3783.0,
+    "S08": 4782.0
+  },
+  "lfl_units_2025_vs_2023": -2.3,
+  "lfl_value_2025_vs_2023": 79.7,
+  "lfl_family_growth": {
+    "Frozen Meat & Fish": -0.111,
+    "Soft Drinks & Water": -0.065,
+    "Breakfast & Hot Beverages": -0.062,
+    "Snacks & Confectionery": -0.06,
+    "Rice & Grains": -0.05,
+    "Household Cleaning": -0.037,
+    "Dairy & Eggs": -0.036,
+    "Personal Care": -0.008,
+    "Beer, Wine & Spirits": -0.005,
+    "Bread & Bakery": 0.017,
+    "Fresh Produce": 0.022,
+    "Noodles & Pasta": 0.026,
+    "Cooking Oils & Seasonings": 0.027
+  },
+  "lfl_family_price_growth": {
+    "Beer, Wine & Spirits": 0.541,
+    "Bread & Bakery": 0.831,
+    "Breakfast & Hot Beverages": 0.803,
+    "Cooking Oils & Seasonings": 0.551,
+    "Dairy & Eggs": 0.839,
+    "Fresh Produce": 0.735,
+    "Frozen Meat & Fish": 0.936,
+    "Household Cleaning": 0.902,
+    "Noodles & Pasta": 1.183,
+    "Personal Care": 0.725,
+    "Rice & Grains": 1.114,
+    "Snacks & Confectionery": 0.835,
+    "Soft Drinks & Water": 0.981
+  },
+  "dow_index": {
+    "express": {
+      "Mon": 1.029,
+      "Tue": 0.991,
+      "Wed": 1.043,
+      "Thu": 1.019,
+      "Fri": 1.135,
+      "Sat": 1.006,
+      "Sun": 0.773
+    },
+    "hypermarket": {
+      "Mon": 0.832,
+      "Tue": 0.806,
+      "Wed": 0.846,
+      "Thu": 0.922,
+      "Fri": 1.091,
+      "Sat": 1.422,
+      "Sun": 1.052
+    },
+    "supermarket": {
+      "Mon": 0.873,
+      "Tue": 0.842,
+      "Wed": 0.883,
+      "Thu": 0.949,
+      "Fri": 1.082,
+      "Sat": 1.319,
+      "Sun": 1.019
+    }
+  },
+  "payday_effect_family": {
+    "Household Cleaning": 0.181,
+    "Rice & Grains": 0.158,
+    "Personal Care": 0.14,
+    "Cooking Oils & Seasonings": 0.137,
+    "Frozen Meat & Fish": 0.109,
+    "Breakfast & Hot Beverages": 0.103,
+    "Noodles & Pasta": 0.081,
+    "Soft Drinks & Water": 0.08,
+    "Dairy & Eggs": 0.075,
+    "Snacks & Confectionery": 0.074,
+    "Beer, Wine & Spirits": 0.072,
+    "Fresh Produce": 0.071,
+    "Bread & Bakery": 0.039
+  },
+  "payday_effect_store": {
+    "S06": 0.146,
+    "S03": 0.131,
+    "S04": 0.108,
+    "S02": 0.103,
+    "S07": 0.101,
+    "S05": 0.083,
+    "S08": 0.078,
+    "S01": 0.049
+  },
+  "dec_index": {
+    "Beer, Wine & Spirits": 1.48,
+    "Soft Drinks & Water": 1.42,
+    "Frozen Meat & Fish": 1.4,
+    "Fresh Produce": 1.24,
+    "Rice & Grains": 1.23,
+    "Cooking Oils & Seasonings": 1.23,
+    "Snacks & Confectionery": 1.2,
+    "Household Cleaning": 1.14,
+    "Personal Care": 1.14,
+    "Dairy & Eggs": 1.13,
+    "Noodles & Pasta": 1.1,
+    "Bread & Bakery": 1.1,
+    "Breakfast & Hot Beverages": 1.02
+  },
+  "month_range": {
+    "Beer, Wine & Spirits": 0.6,
+    "Soft Drinks & Water": 0.58,
+    "Frozen Meat & Fish": 0.48,
+    "Fresh Produce": 0.36,
+    "Rice & Grains": 0.3,
+    "Cooking Oils & Seasonings": 0.29,
+    "Snacks & Confectionery": 0.27,
+    "Personal Care": 0.21,
+    "Household Cleaning": 0.2,
+    "Breakfast & Hot Beverages": 0.2,
+    "Dairy & Eggs": 0.19,
+    "Noodles & Pasta": 0.16,
+    "Bread & Bakery": 0.16
+  },
+  "seasonal_class": {
+    "Beer, Wine & Spirits": "strongly seasonal",
+    "Soft Drinks & Water": "strongly seasonal",
+    "Frozen Meat & Fish": "strongly seasonal",
+    "Fresh Produce": "strongly seasonal",
+    "Rice & Grains": "moderately seasonal",
+    "Cooking Oils & Seasonings": "moderately seasonal",
+    "Snacks & Confectionery": "moderately seasonal",
+    "Personal Care": "moderately seasonal",
+    "Household Cleaning": "moderately seasonal",
+    "Breakfast & Hot Beverages": "moderately seasonal",
+    "Dairy & Eggs": "weakly seasonal",
+    "Noodles & Pasta": "weakly seasonal",
+    "Bread & Bakery": "weakly seasonal"
+  },
+  "peak_month": {
+    "Beer, Wine & Spirits": "Dec",
+    "Soft Drinks & Water": "Dec",
+    "Frozen Meat & Fish": "Dec",
+    "Fresh Produce": "Dec",
+    "Rice & Grains": "Dec",
+    "Cooking Oils & Seasonings": "Dec",
+    "Snacks & Confectionery": "Dec",
+    "Personal Care": "Dec",
+    "Household Cleaning": "Dec",
+    "Breakfast & Hot Beverages": "Sep",
+    "Dairy & Eggs": "Dec",
+    "Noodles & Pasta": "Dec",
+    "Bread & Bakery": "Dec"
+  },
+  "seasonal_strength": {
+    "Beer, Wine & Spirits": 0.888,
+    "Soft Drinks & Water": 0.904,
+    "Frozen Meat & Fish": 0.923,
+    "Fresh Produce": 0.798,
+    "Rice & Grains": 0.9,
+    "Cooking Oils & Seasonings": 0.805,
+    "Snacks & Confectionery": 0.844,
+    "Personal Care": 0.81,
+    "Household Cleaning": 0.819,
+    "Breakfast & Hot Beverages": 0.813,
+    "Dairy & Eggs": 0.774,
+    "Noodles & Pasta": 0.642,
+    "Bread & Bakery": 0.71
+  },
+  "chain_weekly_seasonal_strength": 0.907,
+  "xmas_peak_index": {
+    "Frozen Meat & Fish": 2.67,
+    "Beer, Wine & Spirits": 2.3,
+    "Soft Drinks & Water": 2.26,
+    "Rice & Grains": 2.1,
+    "Snacks & Confectionery": 1.9,
+    "Fresh Produce": 1.8,
+    "Cooking Oils & Seasonings": 1.8,
+    "Personal Care": 1.67,
+    "Dairy & Eggs": 1.55,
+    "Household Cleaning": 1.43,
+    "Bread & Bakery": 1.39,
+    "Breakfast & Hot Beverages": 1.37,
+    "Noodles & Pasta": 1.29
+  },
+  "eid_peak_by_region": {
+    "North Central": 1.22,
+    "North West": 1.62,
+    "South South": 1.17,
+    "South West": 1.11
+  },
+  "ramadan_ratio_by_store": {
+    "S01": 0.965,
+    "S02": 1.01,
+    "S03": 1.05,
+    "S04": 1.027,
+    "S05": 0.954,
+    "S06": 1.019,
+    "S07": 1.127,
+    "S08": 0.995
+  },
+  "family_cv": {
+    "Bread & Bakery": 0.17,
+    "Dairy & Eggs": 0.21,
+    "Noodles & Pasta": 0.215,
+    "Household Cleaning": 0.228,
+    "Snacks & Confectionery": 0.231,
+    "Cooking Oils & Seasonings": 0.232,
+    "Breakfast & Hot Beverages": 0.235,
+    "Personal Care": 0.236,
+    "Soft Drinks & Water": 0.267,
+    "Rice & Grains": 0.277,
+    "Frozen Meat & Fish": 0.332,
+    "Beer, Wine & Spirits": 0.341,
+    "Fresh Produce": 0.372
+  },
+  "store_cv": {
+    "S01": 0.232,
+    "S02": 0.232,
+    "S04": 0.236,
+    "S03": 0.242,
+    "S06": 0.242,
+    "S07": 0.243,
+    "S08": 0.294,
+    "S05": 0.332
+  },
+  "volatility_classes": {
+    "stable": 58,
+    "moderate": 41,
+    "volatile": 4
+  },
+  "promo_uplift_family": {
+    "Household Cleaning": 0.399,
+    "Noodles & Pasta": 0.328,
+    "Beer, Wine & Spirits": 0.297,
+    "Soft Drinks & Water": 0.27,
+    "Snacks & Confectionery": 0.27,
+    "Cooking Oils & Seasonings": 0.237,
+    "Rice & Grains": 0.194,
+    "Breakfast & Hot Beverages": 0.188,
+    "Personal Care": 0.137,
+    "Frozen Meat & Fish": 0.13,
+    "Dairy & Eggs": 0.115,
+    "Fresh Produce": 0.093,
+    "Bread & Bakery": 0.077
+  },
+  "post_promo_effect_family": {
+    "Household Cleaning": {
+      "effect": -0.072,
+      "p_value": 0.0
+    },
+    "Noodles & Pasta": {
+      "effect": -0.062,
+      "p_value": 0.0
+    },
+    "Beer, Wine & Spirits": {
+      "effect": -0.049,
+      "p_value": 0.001
+    },
+    "Soft Drinks & Water": {
+      "effect": -0.048,
+      "p_value": 0.0
+    },
+    "Snacks & Confectionery": {
+      "effect": -0.042,
+      "p_value": 0.001
+    },
+    "Cooking Oils & Seasonings": {
+      "effect": -0.029,
+      "p_value": 0.015
+    },
+    "Personal Care": {
+      "effect": -0.028,
+      "p_value": 0.014
+    },
+    "Rice & Grains": {
+      "effect": -0.027,
+      "p_value": 0.055
+    },
+    "Breakfast & Hot Beverages": {
+      "effect": -0.019,
+      "p_value": 0.129
+    },
+    "Frozen Meat & Fish": {
+      "effect": -0.013,
+      "p_value": 0.382
+    },
+    "Fresh Produce": {
+      "effect": -0.011,
+      "p_value": 0.506
+    },
+    "Dairy & Eggs": {
+      "effect": -0.007,
+      "p_value": 0.505
+    },
+    "Bread & Bakery": {
+      "effect": -0.003,
+      "p_value": 0.735
+    }
+  },
+  "promo_model_r2_range": [
+    0.51,
+    0.79
+  ],
+  "event_count": 768,
+  "event_median_uplift": 1.173,
+  "uplift_by_type_median": {
+    "display_feature": 1.136,
+    "multibuy": 1.358,
+    "price_discount": 1.158
+  },
+  "discount_uplift_spearman": 0.14,
+  "store_median_uplift": {
+    "S06": 1.279,
+    "S02": 1.211,
+    "S03": 1.211,
+    "S05": 1.209,
+    "S04": 1.157,
+    "S07": 1.123,
+    "S01": 1.113,
+    "S08": 1.113
+  },
+  "store_uplift_kruskal_p": 2.75e-13,
+  "within_promo_uplift_spread_median": 0.4,
+  "noexec_events": [
+    [
+      "PR24-022",
+      "S05",
+      "Price Drop - Bread & Bakery",
+      1.045
+    ],
+    [
+      "PR24-022",
+      "S07",
+      "Price Drop - Bread & Bakery",
+      1.014
+    ],
+    [
+      "PR25-043",
+      "S05",
+      "Price Drop - Personal Care",
+      0.988
+    ],
+    [
+      "PR25-043",
+      "S07",
+      "Price Drop - Personal Care",
+      1.106
+    ]
+  ],
+  "median_price_change_priced": -0.088,
+  "low_events": 113,
+  "low_diagnosis": {
+    "weak or no response": 70,
+    "seasonal timing (baseline falling)": 33,
+    "stock-outs during promotion": 8,
+    "discount not reflected in shelf price": 2
+  },
+  "exec_fail_cases": [
+    [
+      "PR24-022",
+      "S07"
+    ],
+    [
+      "PR25-043",
+      "S05"
+    ]
+  ],
+  "mix_index_highlights": {
+    "S01": {
+      "Beer, Wine & Spirits": 1.3,
+      "Personal Care": 1.25
+    },
+    "S02": {
+      "Beer, Wine & Spirits": 1.07,
+      "Noodles & Pasta": 1.03
+    },
+    "S03": {
+      "Beer, Wine & Spirits": 1.16,
+      "Noodles & Pasta": 1.08
+    },
+    "S04": {
+      "Frozen Meat & Fish": 1.1,
+      "Beer, Wine & Spirits": 1.08
+    },
+    "S05": {
+      "Beer, Wine & Spirits": 1.35,
+      "Frozen Meat & Fish": 1.17
+    },
+    "S06": {
+      "Noodles & Pasta": 1.16,
+      "Rice & Grains": 1.09
+    },
+    "S07": {
+      "Rice & Grains": 1.27,
+      "Cooking Oils & Seasonings": 1.25
+    },
+    "S08": {
+      "Snacks & Confectionery": 1.3,
+      "Bread & Bakery": 1.27
+    }
+  },
+  "s04_competitor_effect": -9.4,
+  "s03_refurb_effect": 13.8,
+  "s08_weeks_to_90pct": 9,
+  "backtest": {
+    "gbm91": {
+      "WAPE": 0.2072,
+      "bias": -0.0206,
+      "MAE (units/day)": 63.1649,
+      "weekly WAPE": 0.0993
+    },
+    "gbm28": {
+      "WAPE": 0.2084,
+      "bias": -0.0256,
+      "MAE (units/day)": 63.5168,
+      "weekly WAPE": 0.0998
+    },
+    "ets": {
+      "WAPE": 0.237,
+      "bias": -0.0322,
+      "MAE (units/day)": 72.2477,
+      "weekly WAPE": 0.1456
+    },
+    "weekday_avg_4w": {
+      "WAPE": 0.2511,
+      "bias": -0.0381,
+      "MAE (units/day)": 76.5478,
+      "weekly WAPE": 0.1408
+    },
+    "seasonal_naive_364": {
+      "WAPE": 0.2982,
+      "bias": -0.007,
+      "MAE (units/day)": 90.897,
+      "weekly WAPE": 0.153
+    },
+    "seasonal_naive_7": {
+      "WAPE": 0.3051,
+      "bias": -0.0223,
+      "MAE (units/day)": 93.0127,
+      "weekly WAPE": 0.16
+    }
+  },
+  "best_method": "gbm91",
+  "second_method": "gbm28",
+  "best_beats_second_share": 0.521,
+  "wilcoxon_p": 0.541,
+  "fold_wape_best": {
+    "2025-06-09": 0.209,
+    "2025-07-07": 0.199,
+    "2025-08-04": 0.208,
+    "2025-09-01": 0.207,
+    "2025-09-29": 0.208,
+    "2025-10-27": 0.2,
+    "2025-11-24": 0.217
+  },
+  "family_wape": {
+    "Bread & Bakery": 0.134,
+    "Dairy & Eggs": 0.17,
+    "Noodles & Pasta": 0.181,
+    "Breakfast & Hot Beverages": 0.185,
+    "Cooking Oils & Seasonings": 0.185,
+    "Household Cleaning": 0.186,
+    "Personal Care": 0.188,
+    "Snacks & Confectionery": 0.193,
+    "Rice & Grains": 0.222,
+    "Soft Drinks & Water": 0.232,
+    "Frozen Meat & Fish": 0.262,
+    "Beer, Wine & Spirits": 0.286,
+    "Fresh Produce": 0.302
+  },
+  "store_wape": {
+    "S03": 0.19,
+    "S01": 0.192,
+    "S04": 0.193,
+    "S06": 0.195,
+    "S02": 0.2,
+    "S07": 0.2,
+    "S08": 0.235,
+    "S05": 0.289
+  },
+  "family_improvement_vs_naive": {
+    "Bread & Bakery": 0.125,
+    "Dairy & Eggs": 0.08,
+    "Noodles & Pasta": 0.266,
+    "Breakfast & Hot Beverages": 0.121,
+    "Cooking Oils & Seasonings": 0.167,
+    "Household Cleaning": 0.217,
+    "Personal Care": 0.133,
+    "Snacks & Confectionery": 0.206,
+    "Rice & Grains": 0.12,
+    "Soft Drinks & Water": 0.214,
+    "Frozen Meat & Fish": 0.142,
+    "Beer, Wine & Spirits": 0.14,
+    "Fresh Produce": 0.1
+  },
+  "top_features": {
+    "family_c": 55.08,
+    "roll28_lag91": 35.03,
+    "store_c": 21.92,
+    "dow_mean_lag91": 18.74,
+    "dow": 14.09,
+    "days_to_xmas": 8.19,
+    "ptype_c": 4.5,
+    "roll7_lag364": 1.74
+  },
+  "chain_weekly_ratio_p10_p90": [
+    0.98,
+    1.061
+  ],
+  "q1_2026_forecast_units": 2842026,
+  "q1_2025_actual_units": 2847700,
+  "forecast_rows": 9270,
+  "policy_gap_counts": {
+    "about right": 53,
+    "over-stocked today": 37,
+    "under-protected today": 13
+  },
+  "ss_stockout_spearman": 0.03,
+  "ss_saving_vs_naive_pct": 41.8,
+  "shelf_life_risk_series": 0,
+  "ss_days_by_family": {
+    "Beer, Wine & Spirits": 2.37,
+    "Bread & Bakery": 0.48,
+    "Breakfast & Hot Beverages": 1.91,
+    "Cooking Oils & Seasonings": 1.98,
+    "Dairy & Eggs": 1.06,
+    "Fresh Produce": 1.05,
+    "Frozen Meat & Fish": 1.97,
+    "Household Cleaning": 1.93,
+    "Noodles & Pasta": 1.84,
+    "Personal Care": 1.98,
+    "Rice & Grains": 2.25,
+    "Snacks & Confectionery": 1.61,
+    "Soft Drinks & Water": 1.75
+  },
+  "attention_rank": [
+    "S05",
+    "S07",
+    "S08",
+    "S02",
+    "S06",
+    "S04",
+    "S03",
+    "S01"
+  ],
+  "attention_table": {
+    "S05": {
+      "forecast_WAPE": 0.289,
+      "baseline_CV": 0.332,
+      "stockout_rate": 0.025,
+      "safety_stock_days": 2.364,
+      "attention_score": 0.969
+    },
+    "S07": {
+      "forecast_WAPE": 0.2,
+      "baseline_CV": 0.243,
+      "stockout_rate": 0.03,
+      "safety_stock_days": 1.91,
+      "attention_score": 0.844
+    },
+    "S08": {
+      "forecast_WAPE": 0.235,
+      "baseline_CV": 0.294,
+      "stockout_rate": 0.022,
+      "safety_stock_days": 1.561,
+      "attention_score": 0.75
+    },
+    "S02": {
+      "forecast_WAPE": 0.2,
+      "baseline_CV": 0.232,
+      "stockout_rate": 0.014,
+      "safety_stock_days": 1.701,
+      "attention_score": 0.531
+    },
+    "S06": {
+      "forecast_WAPE": 0.195,
+      "baseline_CV": 0.242,
+      "stockout_rate": 0.011,
+      "safety_stock_days": 1.466,
+      "attention_score": 0.469
+    },
+    "S04": {
+      "forecast_WAPE": 0.193,
+      "baseline_CV": 0.236,
+      "stockout_rate": 0.011,
+      "safety_stock_days": 1.798,
+      "attention_score": 0.438
+    },
+    "S03": {
+      "forecast_WAPE": 0.19,
+      "baseline_CV": 0.242,
+      "stockout_rate": 0.012,
+      "safety_stock_days": 1.409,
+      "attention_score": 0.344
+    },
+    "S01": {
+      "forecast_WAPE": 0.192,
+      "baseline_CV": 0.232,
+      "stockout_rate": 0.009,
+      "safety_stock_days": 1.403,
+      "attention_score": 0.156
+    }
+  },
+  "qa_checks_passed": 12
+}

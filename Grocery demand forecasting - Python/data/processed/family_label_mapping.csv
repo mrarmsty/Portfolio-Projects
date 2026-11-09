@@ -1,0 +1,54 @@
+raw_label,family_name,method,rows
+"Beer, Wine & Spirits","Beer, Wine & Spirits",exact,6687
+Bread & Bakery,Bread & Bakery,exact,7753
+Breakfast & Hot Beverages,Breakfast & Hot Beverages,exact,7749
+Cooking Oils & Seasonings,Cooking Oils & Seasonings,exact,7708
+Dairy & Eggs,Dairy & Eggs,exact,7739
+Fresh Produce,Fresh Produce,exact,7739
+Frozen Meat & Fish,Frozen Meat & Fish,exact,7768
+Household Cleaning,Household Cleaning,exact,7692
+Noodles & Pasta,Noodles & Pasta,exact,7759
+Personal Care,Personal Care,exact,7751
+Rice & Grains,Rice & Grains,exact,7770
+Snacks & Confectionery,Snacks & Confectionery,exact,7747
+Soft Drinks & Water,Soft Drinks & Water,exact,7729
+Cooking Oil & Seasonings,Cooking Oils & Seasonings,fuzzy (reviewed),142
+Snacks & Confectionary,Snacks & Confectionery,fuzzy (reviewed),121
+Alcoholic Beverages,"Beer, Wine & Spirits",legacy alias (reviewed),108
+Bakery,Bread & Bakery,legacy alias (reviewed),135
+Breakfast & Hot Drinks,Breakfast & Hot Beverages,legacy alias (reviewed),141
+Oils & Seasonings,Cooking Oils & Seasonings,legacy alias (reviewed),138
+Fruits & Vegetables,Fresh Produce,legacy alias (reviewed),114
+Frozen Foods,Frozen Meat & Fish,legacy alias (reviewed),144
+Toiletries & Personal Care,Personal Care,legacy alias (reviewed),128
+"beer, wine & spirits","Beer, Wine & Spirits",normalised,111
+Beer Wine & Spirits,"Beer, Wine & Spirits",normalised,136
+Bread and Bakery,Bread & Bakery,normalised,125
+bread & bakery,Bread & Bakery,normalised,128
+breakfast & hot beverages,Breakfast & Hot Beverages,normalised,135
+Breakfast and Hot Beverages,Breakfast & Hot Beverages,normalised,124
+cooking oils & seasonings,Cooking Oils & Seasonings,normalised,156
+DAIRY & EGGS,Dairy & Eggs,normalised,135
+dairy/eggs,Dairy & Eggs,normalised,130
+Dairy and Eggs,Dairy & Eggs,normalised,151
+fresh produce,Fresh Produce,normalised,82
+Fresh produce ,Fresh Produce,normalised,105
+FRESH PRODUCE,Fresh Produce,normalised,94
+Frozen Meat and Fish,Frozen Meat & Fish,normalised,115
+Frozen meat & fish,Frozen Meat & Fish,normalised,130
+Household Cleaning ,Household Cleaning,normalised,151
+household cleaning,Household Cleaning,normalised,158
+HOUSEHOLD CLEANING,Household Cleaning,normalised,140
+Noodles and Pasta,Noodles & Pasta,normalised,140
+noodles & pasta,Noodles & Pasta,normalised,132
+NOODLES & PASTA,Noodles & Pasta,normalised,120
+personal care,Personal Care,normalised,144
+Personal Care ,Personal Care,normalised,123
+rice & grains,Rice & Grains,normalised,128
+Rice/Grains,Rice & Grains,normalised,127
+Rice and Grains,Rice & Grains,normalised,127
+snacks & confectionery,Snacks & Confectionery,normalised,135
+Snacks and Confectionery,Snacks & Confectionery,normalised,138
+soft drinks & water,Soft Drinks & Water,normalised,128
+Soft drinks/Water,Soft Drinks & Water,normalised,141
+Soft Drinks and Water,Soft Drinks & Water,normalised,143
