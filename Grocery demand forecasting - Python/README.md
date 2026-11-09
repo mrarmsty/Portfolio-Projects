@@ -112,7 +112,6 @@ basketline-grocery-demand-forecasting/
 |-- README.md
 |-- requirements.txt
 |-- data/
-|   |-- raw/basketline_grocery_demand_data.xlsx        # source workbook (unchanged)
 |   |-- processed/basketline_sales_daily_clean.csv     # cleaned, analysis-ready daily sales
 |   |-- processed/cleaning_log.csv                     # every cleaning action with row counts
 |   |-- processed/family_label_mapping.csv             # audit trail for label standardisation
@@ -126,7 +125,6 @@ basketline-grocery-demand-forecasting/
     |-- analyst_report.docx / .pdf                     # technical report
     |-- data_cleaning_log.md
     |-- kpi_definitions.md
-    `-- portfolio_positioning.md
 ```
 
 Key result files in `outputs/results/`:
