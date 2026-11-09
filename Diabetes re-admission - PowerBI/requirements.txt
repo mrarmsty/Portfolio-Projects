@@ -1,0 +1,12 @@
+# Python is used for reference data preparation, statistics and modelling.
+# Power BI Desktop (October 2026 or later) is required to open the .pbip report.
+pandas>=2.2
+numpy>=1.26
+scipy>=1.13
+scikit-learn>=1.5
+statsmodels>=0.14
+openpyxl>=3.1
+matplotlib>=3.8
+# only needed to re-run scripts/validate_pbir.py
+jsonschema>=4.22
+referencing>=0.35
